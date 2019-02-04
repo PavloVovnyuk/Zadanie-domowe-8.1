@@ -14,7 +14,7 @@ public class MirrorReflection {
         }
         for (int i = 0; i <tablica1.length; i++) {
             System.out.print (tablica1[i]+""+ tablica1[tablica1.length-1-i]);
-        }
+         }
     }
 }
 
