@@ -1,10 +1,9 @@
 package ZadanieSumaLiczb;
 
 public class SumaLiczb {
-   static int Calculate(){
+   static int Calculate(int number){
         boolean isCalk = true;
         int result;
-        int number = 1999;
         int result2 = 0;
         while (isCalk) {
             result = number % 10;
