@@ -3,34 +3,34 @@ package ZadanieDniTygodnia;
 import java.time.MonthDay;
 
  class CalandarConverter {
-    private static final String MONDAY = " 1 dzień tygodnia to Poniedzialek";
-    private static final String TUESDAY = " 2 dzień tygodnia to Wtorek";
-    private static final String WEDNESDAY = " 3 dzień tygodnia to Sroda";
-    private static final String THYRSDAY = " 4 dzień tygodnia to Czwartek";
-    private static final String FRIDAY = " 5 dzień tygodnia to Piotek";
-    private static final String SATURDAY = " 6 dzień tygodnia to Sobota";
-    private static final String SUNDAY = " 7 dzień tygodnia to Niedziela";
-    private static final String dayOff = " 8 dzień tygodnia to Nie ma takiego dnia";
+    private static final int MONDAY = 1;
+    private static final int TUESDAY = 2;
+    private static final int WEDNESDAY = 3;
+    private static final int THYRSDAY = 4;
+    private static final int FRIDAY = 5;
+    private static final int SATURDAY = 6;
+    private static final int SUNDAY = 7;
+
 
 
    static String convertDayToString(int dayNumber) {
         switch (dayNumber) {
-            case 1:
-                return MONDAY;
-            case 2:
-                return TUESDAY;
-            case 3:
-                return WEDNESDAY;
-            case 4:
-                return THYRSDAY;
-            case 5:
-               return FRIDAY;
-            case 6:
-                return SATURDAY;
-            case 7:
-                return SUNDAY;
-                default:
-                    return dayOff;
+            case MONDAY:
+                return "Poniedziałek";
+            case TUESDAY:
+                return "Wtorek";
+            case WEDNESDAY:
+                return "Sroda";
+            case THYRSDAY:
+                return "Czwartek";
+            case FRIDAY:
+               return "Piątek";
+            case SATURDAY:
+                return "Sobota";
+            case SUNDAY:
+                return "Niedziela";
+            default:
+                    return "Nie ma takiego dnia";
         }
     }
 }
