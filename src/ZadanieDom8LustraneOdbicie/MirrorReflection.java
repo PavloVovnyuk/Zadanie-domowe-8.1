@@ -16,5 +16,5 @@ public class MirrorReflection {
             System.out.print (tablica1[i]+""+ tablica1[tablica1.length-1-i]);
          }
     }
-}
+ }
 
