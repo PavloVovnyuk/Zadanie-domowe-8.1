@@ -6,19 +6,15 @@ import java.util.Random;
 
 public class MirrorReflection {
 
-    static int[] mirrorRefl(int size) {
+    static void mirrorRefl(int tablica) {
         Random random = new Random ();
-        int[] tablica1 = new int[size];
+        int[] tablica1 = new int[tablica];
         for (int i = 0; i < tablica1.length; i++) {
             tablica1[i] = random.nextInt (10);
         }
-        int[] tablica2 = new int[size * 2];
-        for (int i = 0; i < tablica1.length; i++) {
-            tablica2[i] = tablica1[i];
-            tablica2[tablica2.length - i - 1] = tablica1[i];
+        for (int i = 0; i <tablica1.length; i++) {
+            System.out.print (tablica1[i]+""+ tablica1[tablica1.length-1-i]);
         }
-        return tablica2;
     }
 }
-
 
